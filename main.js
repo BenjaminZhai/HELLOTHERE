@@ -6,73 +6,75 @@
 // F: 0 - 49
 
 // Determine Letter Grades Click Event
-document.getElementById('btn').addEventListener('click', btnClicked);
+document.getElementById("btn").addEventListener("click", btnClicked);
 
 function btnClicked() {
   // Get Percentage Grades
-  let engPercent = +document.getElementById('eng-percent').value;
-  let socPercent = +document.getElementById('soc-percent').value;
-  let mathPercent = +document.getElementById('math-percent').value;
-  let sciPercent = +document.getElementById('sci-percent').value;
+  let engPercent = +document.getElementById("eng-percent").value;
+  let socPercent = +document.getElementById("soc-percent").value;
+  let mathPercent = +document.getElementById("math-percent").value;
+  let sciPercent = +document.getElementById("sci-percent").value;
 
   // Calculate & Output Letter Grades
+  document.getElementById("eng-letter").innerHTML = engLetter;
+
   // English
   let engLetter;
   if (engPercent >= 80) {
-    engLetter = 'A';
+    engLetter = "A";
   } else if (engPercent >= 65) {
-    engLetter = 'B';
+    engLetter = "B";
   } else if (engPercent >= 55) {
-    engLetter = 'C';
+    engLetter = "C";
   } else if (engPercent >= 50) {
-    engLetter = 'D';
+    engLetter = "D";
   } else {
-    engLetter = 'F';
+    engLetter = "F";
   }
-  document.getElementById('eng-letter').innerHTML = engLetter;
+  document.getElementById("eng-letter").innerHTML = engLetter;
 
   // Social Studies
   let socLetter;
   if (socPercent >= 80) {
-    socLetter = 'A';
+    socLetter = "A";
   } else if (socPercent >= 65) {
-    socLetter = 'B';
+    socLetter = "B";
   } else if (socPercent >= 55) {
-    socLetter = 'C';
+    socLetter = "C";
   } else if (socPercent >= 50) {
-    socLetter = 'D';
+    socLetter = "D";
   } else {
-    socLetter = 'F';
+    socLetter = "F";
   }
-  document.getElementById('soc-letter').innerHTML = socLetter;
+  document.getElementById("soc-letter").innerHTML = socLetter;
 
   // Mathematics
   let mathLetter;
   if (mathPercent >= 80) {
-    mathLetter = 'A';
+    mathLetter = "A";
   } else if (mathPercent >= 65) {
-    mathLetter = 'B';
+    mathLetter = "B";
   } else if (mathPercent >= 55) {
-    mathLetter = 'C';
+    mathLetter = "C";
   } else if (mathPercent >= 50) {
-    mathLetter = 'D';
+    mathLetter = "D";
   } else {
-    mathLetter = 'F';
+    mathLetter = "F";
   }
-  document.getElementById('math-letter').innerHTML = mathLetter;
+  document.getElementById("math-letter").innerHTML = mathLetter;
 
   // Science
   let sciLetter;
   if (sciPercent >= 80) {
-    sciLetter = 'A';
+    sciLetter = "A";
   } else if (sciPercent >= 65) {
-    sciLetter = 'B';
+    sciLetter = "B";
   } else if (sciPercent >= 55) {
-    sciLetter = 'C';
+    sciLetter = "C";
   } else if (sciPercent >= 50) {
-    sciLetter = 'D';
+    sciLetter = "D";
   } else {
-    sciLetter = 'F';
+    sciLetter = "F";
   }
-  document.getElementById('sci-letter').innerHTML = sciLetter;
+  document.getElementById("sci-letter").innerHTML = sciLetter;
 }
